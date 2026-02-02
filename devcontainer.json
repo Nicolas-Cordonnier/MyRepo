@@ -1,0 +1,23 @@
+
+{
+  "name": "Codespace avec SSH",
+  "image": "mcr.microsoft.com/devcontainers/base:latest",
+
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+
+  "forwardPorts": [22],
+
+  "remoteUser": "vscode"
+}
